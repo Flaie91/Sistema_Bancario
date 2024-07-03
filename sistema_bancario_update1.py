@@ -25,7 +25,7 @@ while True:
             if valor > 0:
                 saldo += valor
                 extrato += f"Depósito: R$ {valor:.2f}\n"
-                print(f"Depósito de R$ {valor:.2f} realizado com sucesso! Novo saldo: R$ {saldo:.2f}")
+                print(f"Depósito de R$ {valor:.2f} realizado com sucesso! \nNovo saldo: R$ {saldo:.2f}")
             else:
                 print("Operação falhou! O valor informado é inválido.")
          except ValueError:
@@ -53,7 +53,7 @@ while True:
                 saldo -= valor
                 extrato += f"Saque: R$ {valor:.2f}\n"
                 numero_saques += 1
-                print(f"Saque de R$ {valor:.2f} realizado com sucesso! Novo saldo: R$ {saldo:.2f}")
+                print(f"Saque de R$ {valor:.2f} realizado com sucesso! \nNovo saldo: R$ {saldo:.2f}")
             else:
                 print("Operação falhou! O valor informado é inválido.")
         except ValueError:
